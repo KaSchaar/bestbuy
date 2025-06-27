@@ -45,18 +45,3 @@ class Produkt:
         if self.menge == 0:
             self.deaktiviere()
         return menge * self.preis
-
-
-if __name__ == "__main__":
-    bose = Produkt("Bose QuietComfort Earbuds", 250, 500)
-    mac = Produkt("MacBook Air M2", 1450, 100)
-
-    print(bose.kaufen(50))
-    print(mac.kaufen(100))
-    print(mac.ist_aktiv())
-
-    print(bose.anzeigen())
-    print(mac.anzeigen())
-
-    bose.setze_menge(1000)
-    print(bose.anzeigen())
